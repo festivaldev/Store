@@ -1,0 +1,19 @@
+$light: #FFF;
+$dark: #000;
+$primary: #0078D7;
+
+$colors: (
+    light: $light,
+    dark: $dark,
+    primary: $primary
+);
+
+@each $color, $hex in $colors {
+    .bg--#{$color} {
+        background-color: $hex;
+    }
+
+    .c--#{$color} {
+        color: $hex;
+    }
+}
